@@ -23,6 +23,11 @@ header{
     justify-content: center;
 }
 
+header img {
+    padding-top:40px;
+    width: 90px;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -62,17 +67,23 @@ main form {
     margin-bottom: 94px;
     justify-content: space-between;
     width: 100%;
-    
 }
 
 main form input {
     background: #FFFFFF;
     border: 1px solid #C2D3FF;
-    box-sizing: border-box;
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
     border-radius: 28px;
     height: 56px;
     width: 420px;
+    padding-left: 30px;
+}
+
+main form input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B8C7ED;
 }
 
 main form button {
@@ -88,15 +99,119 @@ main form button {
     color: #FFFFFF;
 }
 
+main form button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+main form p {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #FF5466;
+    padding-left: 32px;
+    padding-top: 6px;
+}
+
+
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-bottom: 49px;
 }
 
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4C7BF3;
+    margin: 0 6px;
+    border: 1px solid rgba(76, 123, 243, 0.15);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+}
+
 footer p {
+    width: 100%;
+    text-align: center;
     font-weight: 300;
     font-size: 12px;
     line-height: 15px;
     color: #969696;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        height: 137px;
+    }
+
+    header img {
+        padding-top: 20px;
+        width: 56px;
+    }
+
+    main h1 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    main h1+p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 32px;
+    }
+
+    main form {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    main form input {
+        width: 280px;
+    }
+
+    main form input::placeholder{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    main form button {
+        width:280px;
+        order: 2;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    main form p {
+        text-align: center;
+        padding-left:0px;
+        padding-top: 2px;
+        padding-bottom: 20px;
+    }
+
+    main img {
+        max-width: 320px;
+        margin-bottom: 120px;
+    }
+
+    footer p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .hidden {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        line-height: 10px;
+    }
 }

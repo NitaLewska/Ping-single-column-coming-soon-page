@@ -1,0 +1,102 @@
+/* Box Model Fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header{
+    height:160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    color:#969696;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 16px;
+}
+
+main h1 span {
+    font-weight: bold;
+    color: #15202A;
+}
+
+main h1+p {
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #15202A;
+}
+
+main img {
+    max-width: 640px;
+    margin-bottom: 72px;
+}
+
+main form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 94px;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+main form input {
+    background: #FFFFFF;
+    border: 1px solid #C2D3FF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
+    border-radius: 28px;
+    height: 56px;
+    width: 420px;
+}
+
+main form button {
+    width: 200px;
+    height: 56px;
+    background: #4C7BF3;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+    border-radius: 28px;
+    border:none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 49px;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #969696;
+}

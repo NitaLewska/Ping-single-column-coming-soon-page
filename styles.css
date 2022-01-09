@@ -84,6 +84,7 @@ main form input::placeholder {
     font-size: 16px;
     line-height: 20px;
     color: #B8C7ED;
+    background: #FFFFFF;
 }
 
 main form button {
@@ -146,6 +147,10 @@ footer p {
 
 .hidden {
     visibility: hidden;
+}
+
+.error {
+    border: 1px solid #FF5466;
 }
 
 @media screen and (max-width: 640px) {

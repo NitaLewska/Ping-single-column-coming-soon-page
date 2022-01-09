@@ -128,12 +128,20 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #4C7BF3;
-    margin: 0 6px;
+    margin: 0 6px 25px;
     border: 1px solid rgba(76, 123, 243, 0.15);
     border-radius: 50%;
     height: 31px;
     width: 31px;
+    background-color:#fff;;
+}
+
+footer a:hover {
+    background-color:#4C7BF3;
+}
+
+footer a:hover img {
+    filter: brightness(0) invert(1);
 }
 
 footer p {
@@ -143,6 +151,11 @@ footer p {
     font-size: 12px;
     line-height: 15px;
     color: #969696;
+}
+
+footer img {
+    width:20px;
+    
 }
 
 .hidden {

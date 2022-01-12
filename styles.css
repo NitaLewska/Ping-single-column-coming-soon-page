@@ -8,8 +8,6 @@ html {
     margin: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-
 body {
     max-width: 640px;
     margin: 0 auto;
@@ -64,7 +62,7 @@ main img {
 main form {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
     justify-content: space-between;
     width: 100%;
 }
